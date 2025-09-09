@@ -17,7 +17,7 @@ yolo_model = YOLO(YOLO_MODEL_PATH)
 # Get class names from YOLO model
 YOLO_CLASSES = yolo_model.names
 
-client = anthropic.Anthropic(api_key="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")
+client = anthropic.Anthropic(api_key="______")
 
 def detect_objects(frame):
     results = yolo_model(frame)
